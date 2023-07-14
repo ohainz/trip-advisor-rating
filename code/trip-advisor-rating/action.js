@@ -27,7 +27,10 @@ function doEvaluateRating() {
 	var countPositive = 0.0;
 	var countAll = 0.0;
 	for (var i = 0; i < numOfRatingTypes; i++) {
-		var count = parseFloat(listOfRatingTypes[i].innerHTML);
+		var text = listOfRatingTypes[i].innerHTML;
+		text = text.replace(',', '');
+		text = text.replace('.', '');
+		var count = parseFloat(text);
 		if (i < numOfPositiveRatingTypes) {
 			countPositive += count;
 		}
