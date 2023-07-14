@@ -1,4 +1,4 @@
-# Trip Advisor - Evaluate Rating Extension
+# Trip Advisor - Evaluate Rating Chrome Extension
 
 Simple chrome extension to evaluate the stars on the site [https://www.tripadvisor.de](https://www.tripadvisor.de).
 
