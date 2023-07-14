@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+
+  "name": "Trip Advisor Rating extension",
+  "version": "1.0.1",
+  "description": "Scrolls to the rating and evaluates the scores.",
+
+  "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png" 
+  },
+  
+  "background": {
+    "service_worker": "action.js"
+  },
+
+  "action": {
+    "default_title": "Try to scroll to the ratings and evaluate them.",
+    "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
+      }
+  },
+  
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  
+  "host_permissions": [
+     "https://www.tripadvisor.de/*"
+  ]  
+}
